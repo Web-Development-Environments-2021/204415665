@@ -5,6 +5,11 @@
 	height: 35px;
 	background: white;
 }
-.lightgallery1 a {
+.photos a {
+  padding: 0px 20px 20px 0;
   display: none;
+}
+
+.photos a img {
+  width: 33%;
 }
