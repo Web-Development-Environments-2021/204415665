@@ -178,6 +178,9 @@ h1, h2, h3, h4, h5, h6 {
   <!-- The qrcoder Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="qrcoder">
     	<h2 class="w3-wide w3-center">QRcode</h2>
+        <div class="w3-padding-large w3-center">
+			<img src="https://lh3.googleusercontent.com/hmK-w2OmyQ49KZYAXPuEERzWIXfixcAneTkkeBFTljZnhLJuf5vTW73Dtj-_hXE8cu82srm4A_G8Z7RazKHhUSHM66INZzJM-yoKQR4CFFxIUhUeYwXZ1N9Y4hHiBmfKhPtQD-ltWfE=s200-p-k" class="w3-center" alt="" style="width:60%">
+  		</div>
   </div>
 
   <hr>
@@ -257,7 +260,12 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
