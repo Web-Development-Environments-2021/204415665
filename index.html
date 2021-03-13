@@ -143,8 +143,10 @@ h1, h2, h3, h4, h5, h6 {
       <img src="https://lh3.googleusercontent.com/np1-UpeEece5QnQCH4yVQC4FX92-k_Xzair-Z_xIP_9lfrZzWPU2moUHsA44cd-HdthyplbfiUUnq4SDw67oJMOEjAX9ch1UKBiAAalqylJ0Lfo-t23szPsrUISisSGNzF-tweIrnq4=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-hide-small" alt="Quiet ocean">
     </div>
   </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
+   
+<a href="#" id="load"> <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -298,6 +300,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+$(function() {
+  $(".item").slice(0, 2).show(); // select the first ten
+  $("#load").click(function(e) { // click event for load more
+    e.preventDefault();
+    $(".item:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
+    if ($(".item:hidden").length == 0) { // check if any hidden divs still exist
+      alert("No more divs"); // alert if there are none left
+    }
+  });
+});
 </script>
 
 </body>
