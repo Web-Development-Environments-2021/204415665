@@ -144,9 +144,9 @@ h1, h2, h3, h4, h5, h6 {
     </div>
   </div>
    
-<a href="#" id="load"> <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button></a>
+<!-- <a href="#" id="load"> <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button></a> -->
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </div>
 
 <!-- Modal for full size images on click-->
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 
   <!-- The like Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="like">
-		<h2 class="w3-wide w3-center">like</h2>
+		<h2 class="w3-wide w3-center">Give us a like</h2>
 <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-MosheBiran/#" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
   </div>
   
@@ -300,16 +300,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-$(function() {
-  $(".item").slice(0, 2).show(); // select the first ten
-  $("#load").click(function(e) { // click event for load more
-    e.preventDefault();
-    $(".item:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
-    if ($(".item:hidden").length == 0) { // check if any hidden divs still exist
-      alert("No more divs"); // alert if there are none left
-    }
-  });
-});
+// $(function() {
+//   $(".item").slice(0, 2).show(); // select the first ten
+//   $("#load").click(function(e) { // click event for load more
+//     e.preventDefault();
+//     $(".item:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
+//     if ($(".item:hidden").length == 0) { // check if any hidden divs still exist
+//       alert("No more divs"); // alert if there are none left
+//     }
+//   });
+// });
 </script>
 
 </body>
