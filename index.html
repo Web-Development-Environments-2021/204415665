@@ -230,18 +230,24 @@ h1, h2, h3, h4, h5, h6 {
         <i class="fa fa-envelope" style="width:30px"> </i> Email: biranmos@post.bgu.ac.il<br>
       </div>
       <div class="w3-col m6">
-	<form action="mailto:biranmos@post.bgu.ac.il" method="GET"  target="_blank">
+	<form action="mailto:biranmos@post.bgu.ac.il" method="post" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input name="subject" id="subject" input class="w3-input w3-border" for="subject" type="text" placeholder="Name" required name="Name">
+              <input name="subject" id="subject" input class="w3-round-xxlarge w3-input w3-border" for="subject" type="text" placeholder="Name" required name="Name">
             </div>
             <div class="w3-half">
-              <input name="from" id="from" class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              <input class="w3-round-xxlarge w3-input w3-border" type="text" placeholder="Email" required name="Email">
             </div>
           </div>
-          <input class="w3-input w3-border" name="body" id="body" type="text" placeholder="Message" required name="Message">
-         
-	  <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          <input class="w3-round-xxlarge w3-input w3-border" name="body" id="body" type="text" placeholder="Message" required name="Message">
+         <div class="w3-half">
+	  		<button class="w3-round-xxlarge	w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+         </div>
+            <div class="w3-half">
+     	 <button class="w3-round-xxlarge w3-button w3-black w3-section w3-right" input type="reset" value="Reset"> Reset </button>
+            </div>
+
+      
     </form>
     
       </div>
