@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
         <i class="fa fa-envelope" style="width:30px"> </i> Email: biranmos@post.bgu.ac.il<br>
       </div>
       <div class="w3-col m6">
-        <form action="/action_page.php" target="biranmos@post.bgu.ac.il">
+        <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
               <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -240,7 +240,9 @@ h1, h2, h3, h4, h5, h6 {
             </div>
           </div>
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+         
+	  <div align="center"><span style="font-family: Calibri, sans-serif; font-size: 19px;" size="28" align="center">  <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button> </span><a style="font-family: Calibri, sans-serif; font-size: 19px;" id="mail" href="biranmos@post.bgu.ac.il">כאן</a></div>
+
         </form>
       </div>
     </div>
@@ -294,11 +296,11 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+// var modal = document.getElementById('ticketModal');
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
 }
 // $(function() {
 //   $(".item").slice(0, 2).show(); // select the first ten
