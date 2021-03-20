@@ -1,322 +1,275 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
+<TITLE>My legacy</TITLE><meta charset="UTF-8">
+<head>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
 </style>
+
+<link rel="stylesheet" type="text/css" href="node_modules/emoji-picker-textarea/css/emoji-picker-textarea.css" />
+
+</head>
+
+
 <body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v10.0" nonce="SRfDiAVp"></script>
-  
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#about"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">About Me</a>
-    <a href="#photos"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">My Photos</a>
-    <a href="#playlist"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">My Playlist</a>	
-    <a href="#like"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">Like</a>
-    <a href="#qrcoder"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">QR code</a>
-    <a href="#spa"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">Q&A</a>
-    <a href="#contact"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">Contact Me</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v10.0" nonce="SRfDiAVp"></script>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#about"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Me</a>
-  <a href="#photos"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Photos</a>
-  <a href="#playlist"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Playlist</a>		
-  <a href="#like"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Like</a>
-  <a href="#qrcoder"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">QR code</a>
-  <a href="#spa"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
-  <a href="#contact"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact Me</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://lh3.googleusercontent.com/PJeovrbRDLZStCP9-3A-uphsowCAAj1GLv9T4wpdaE6p6liKilOKil-pnH-axOxLsDmqLMOvcH_0Hs2W8_JGYyh5qHQzj7XnJJNrF-ErIjtJQUkfYD9Omwpqd4keVgjJsKnnDS5wdXI=w2400" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-<!--       <h3></h3> -->
-<!--       <p><b></b></p> info on the imeag   -->
-    </div>
-  </div>
-<!--   <div class="mySlides w3-display-container w3-center">
-    <img src="https://lh3.googleusercontent.com/zEDxKtEJLTcQ5pnFxoHoOb9vAX1TpGNKiuYrWo0p06j1gRnUEuN5NSOi4MeoZfn1yvzdGyVM_ftJ4ktUjYS_CaW6mycxJ850xjLS_AFv2BzpwfpJQeMfTXLhH_w2P5nllcHX4y_9taw=w2400" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div> -->
-
-  <!-- The about Section -->
-  <div class="w3-row w3-padding-64" style="max-width:800px" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="https://lh3.googleusercontent.com/4v8x4YakEA0728pA_HpjEHbnWLA8l34O4ev4W9pFH8VSt6d-StQr1vWE8Hu2KydNYUcpLuP2DgA6w2XHMeLGEC-DE-96Cdm-CViyXvAdsG-NOL_aFekwa8fy8qAPyrs1UL5p4_RmCQE=w2400" class="w3-round w3-image w3-opacity-min" alt="Tablihihle Setting" width="600" height="750">
-    </div>
-
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">קצת על עצמי</h1><br>
-      <h5 class="w3-center">Tradition since 1889</h5>
-      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i 			 class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#about"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">About Me</a>
+      <a href="#photos"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">My Photos</a>
+      <a href="#playlist"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">My Playlist</a>	
+      <a href="#like"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">Like</a>
+      <a href="#qrcoder"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">QR code</a>
+      <a href="#spa"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">Q&A</a>
+      <a href="#contact"class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="myFunction()">Contact Me</a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     </div>
   </div>
 
-  <!-- The photos Section -->
-<div class="w3-content w3-container w3-padding-64 "style="max-width:800px" id="photos">
-<!-- Container (Portfolio Section) -->
-    <h3 class="w3-center">האלבום שלי</h3>
-  		<p class="w3-center"><em>רגע שנתפס במצלמה לנצח ישאר בחיים<br> לחץ על התמונה על מנת להגדילה</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/wJXPgOfEnhVEwBFHFTXN_D6DmQARbiNl6e9HRMjHde9kACYaGUYdbsNYib420NiSfSr4jbcf77zQUP66w7rROdPdXzvbPdSld_NZ0MbEqB59xlRZATE9ehoRG6UCeIUbXf1tM23-pHM=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/1KErvxjnDFxpRqmN2UEjfx2JfyQNpQfGs2s4jT9FOxmMj0kiLcpgveBYPUp7CXCY-maiuz7uCFW78h5EVCLO0bMTUeyGUZZTTIvTUpyAROe460aK6ZCdSKjnh3FeRfyNqyaGXcWRGh0=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/xHYamnTyTgzBXEvbxASVh6LuqHXD0nEqyHd8jXwxCT93i6jaBDNHOl5yh6N_jHBL7Urz5QIjczcrnY-ITwzQlQAlz91RXr1bmdFORjmchN1cprsZZQSBSuxN_D6xyYvNcUahDyQ-jNg=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/slTKQ6_beg9Mk2KYdnaswo7u_aX8cKHo_fMEC6__dcxs0df4CERHdTqkQPkg_tJhED8rmFk-w53b_ttNnprkWlZaBBD5KT9qpPj1UfhP4C95Agx_QqAYMi8_3KuDRbdQpr8JWUK9iOg=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Quiet ocean">
-    </div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#about"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Me</a>
+    <a href="#photos"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Photos</a>
+    <a href="#playlist"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Playlist</a>		
+    <a href="#like"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Like</a>
+    <a href="#qrcoder"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">QR code</a>
+    <a href="#spa"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
+    <a href="#contact"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact Me</a>
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/G8c7MmMMRBz-Wu0uPBVtPP1NRgZzR7wQYV1oqd_DWuTYcN2XCviUbsULlqUVgUejAtfwLpOdDoHL3BYMYLSyrNqAQ1Si2lBeO-UlcCqxKee1uDj6CybohXzdxuE9BXZ9aYrMEVn9fWk=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/hDaiV5WUsmsi6HZcG3P9Y_un3lq6O7cb7pogPh-T6WI1JpQ65uGO9RVd3B1VPvj7YZfSBH_iDV7RSWd_I41QkupSDtjB_LZC8PdsdSlOpr-kH2WTDBi88PwwH9qDOP-HqozYMPpJfHU=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/ZA2StbIteU9lue4DZLMiGvNNUG_anJdmghBay4pgI9fDvd_xRBiHOfVJz25chXgY3SBT0ijjBzT11shb0ro-NDdUXHM3WZubrE7zRfCzfvhaYB4ve8Ernc_rQfaSlcir2Ks9ZkuhwMo=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/ZUBDahVHVyaAw7at5U2EU9DduDcGJF6ghaxBHvbWDl19JBif5Zgh5l1eJR0TLqCtDpOm8s6mwI_0uPkV-yZgn8g7Ypqh77-f76tK7dZ9n5ksBMk1btXdeHGTmwCyuMJCK3jKNhB_OoA=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    	</div>
-    </div>
-
-      <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/Id2MLvJ9gdR-GB2mU_rfckZ5RGz8UKNhCfhMuMjwq_djBi1jsErYbXcdsDcZR1DSU1mOtBEdDP3WdSWk-aCpeL6crvhuRBt0-voH_8oJyAAqmGPXjB8rnox384rdybqHtMOt-T_efCU=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/c1aAccgm21AyUpQpPUuSXm650R1ocxlDIT9O5huKW024jXrTKdayOv8F1TsJSWVhwneSiv29QEi1dgqoZLw2cKzpkiwDIt3It0KEaXDVZRS9ZpSOjXhdooU9TNmvBxu05XZWTZkgYFg=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/oaco5KymugOze5mm8aBcrwhYg9i-Xlm7epaTzim_pHTOsb2SYHQAmAnXV9A18ok2KnUs3ej-F2YEpAjQ6YMstXSqXXNrTQfyjqQiGwNFpzhTpD7fg3KSPOCcn5GGM5myOdyQcTnHG0I=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/np1-UpeEece5QnQCH4yVQC4FX92-k_Xzair-Z_xIP_9lfrZzWPU2moUHsA44cd-HdthyplbfiUUnq4SDw67oJMOEjAX9ch1UKBiAAalqylJ0Lfo-t23szPsrUISisSGNzF-tweIrnq4=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-   
-<!-- <a href="#" id="load"> <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button></a> -->
-</div>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-	  
-<!--     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">photos</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-	    
-      <div class="w3-row w3-padding-32">
-	        <div class="w3-third">
-			<p>Name</p>
-			<img src="https://lh3.googleusercontent.com/Z_yF7t4v-ICfifNkfZH6cEbD1gAHyYPfN6b6aJWrFIEEJQOY3-H2V3UrY7OBhS_ZFIYaELdO0xjZQtiHLmRaVG0VBioeKQLjoiatkOpxp_jZUXshbzv0QoaSulWoyOmwJZFGwkb-9jg=w2400" class="w3-round w3-margin-bottom" alt="" style="width:60%">
-	      	</div>
-	      
-	      	<div class="w3-third">
-			<p>Name</p>
-			<img src="https://lh3.googleusercontent.com/4v8x4YakEA0728pA_HpjEHbnWLA8l34O4ev4W9pFH8VSt6d-StQr1vWE8Hu2KydNYUcpLuP2DgA6w2XHMeLGEC-DE-96Cdm-CViyXvAdsG-NOL_aFekwa8fy8qAPyrs1UL5p4_RmCQE=w2400" class="w3-round w3-margin-bottom" alt="" style="width:60%">
-	      	</div>
-	      
-	     	<div class="w3-third">
-			<p>Name</p>
-			<img src="https://lh3.googleusercontent.com/V5oTJctNJ32z6iZhtjRyllyAiCsEYWqDk9oAnf0FLWNFjas-jO-O-xHhC_Qd4gCHqQdJ4BBA0W_vHUwXMOR8n1H4KYXCc6NLLrwdR5rOIutq1xUgC6SAvmzo2r1cr0G4G-cLQZHKKnc=w2400" class="w3-round w3-margin-bottom" alt="" style="width:60%">
-	      	</div>
-      </div>
-    </div> -->
-  </div>
-  <hr>
-
- 
-  <!-- The playlist Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="playlist">
-   	 <h2 class="w3-wide w3-center">playlist</h2>
-     <div class="w3-padding-large w3-center">
-     	<iframe width="560" height="315" src="https://www.youtube.com/embed/RwFDYobcdF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  	</div>
+    <!-- Automatic Slideshow Images -->
+      <div class="mySlides w3-display-container w3-center">
+          <img src="https://lh3.googleusercontent.com/PJeovrbRDLZStCP9-3A-uphsowCAAj1GLv9T4wpdaE6p6liKilOKil-pnH-axOxLsDmqLMOvcH_0Hs2W8_JGYyh5qHQzj7XnJJNrF-ErIjtJQUkfYD9Omwpqd4keVgjJsKnnDS5wdXI=w2400" style="width:100%">
+          </div>
    </div>
 
-  <hr>
+    <!-- The about Section -->
+   <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       		<img src="https://lh3.googleusercontent.com/4v8x4YakEA0728pA_HpjEHbnWLA8l34O4ev4W9pFH8VSt6d-StQr1vWE8Hu2KydNYUcpLuP2DgA6w2XHMeLGEC-DE-96Cdm-CViyXvAdsG-NOL_aFekwa8fy8qAPyrs1UL5p4_RmCQE=w2400" class="w3-round w3-image w3-opacity-min" alt="Tablihihle Setting" width="600" height="750">
+       </div>
 
-  <!-- The like Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="like">
-		<h2 class="w3-wide w3-center">Give us a like</h2>
-<div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-MosheBiran/#" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
-  </div>
-  
-  <hr>
-
-  <!-- The qrcoder Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="qrcoder">
-    	<h2 class="w3-wide w3-center">QRcode</h2>
-        <div class="w3-padding-large w3-center">
-			<img src="https://lh3.googleusercontent.com/hmK-w2OmyQ49KZYAXPuEERzWIXfixcAneTkkeBFTljZnhLJuf5vTW73Dtj-_hXE8cu82srm4A_G8Z7RazKHhUSHM66INZzJM-yoKQR4CFFxIUhUeYwXZ1N9Y4hHiBmfKhPtQD-ltWfE=s200-p-k" class="w3-center" alt="" style="width:60%">
-  		</div>
-  </div>
-
-  <hr>
-
-  <!-- The spa Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="spa">
-	 	 <h2 class="w3-wide w3-center"> Q&A </h2>
-  </div>
-
-  <hr>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>You like what did you see? <br> let us know </i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Lod, israel <br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +972-054-7565967<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: biranmos@post.bgu.ac.il<br>
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">קצת על עצמי</h1><br>
+        <h5 class="w3-center">Tradition since 1889</h5>
+        <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+        <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <div class="w3-col m6">
-	<form action="mailto:biranmos@post.bgu.ac.il" method="post" target="_blank" enctype="text/plain">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input name="subject" id="subject" input class="w3-round-xxlarge w3-input w3-border" for="subject" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-round-xxlarge w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
+  </div>
+
+    <!-- The photos Section -->
+  <div class="w3-content w3-container w3-padding-64 " id="photos">
+  <!-- Container (Portfolio Section) -->
+      <h3 class="w3-center">האלבום שלי</h3>
+          <p class="w3-center"><em>רגע שנתפס במצלמה לנצח ישאר בחיים<br> לחץ על התמונה על מנת להגדילה</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/wJXPgOfEnhVEwBFHFTXN_D6DmQARbiNl6e9HRMjHde9kACYaGUYdbsNYib420NiSfSr4jbcf77zQUP66w7rROdPdXzvbPdSld_NZ0MbEqB59xlRZATE9ehoRG6UCeIUbXf1tM23-pHM=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="The mist over the mountains">
           </div>
-          <input class="w3-round-xxlarge w3-input w3-border" name="body" id="body" type="text" placeholder="Message" required name="Message">
-         <div class="w3-half">
-	  		<button class="w3-round-xxlarge	w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-         </div>
-            <div class="w3-half">
-     	 <button class="w3-round-xxlarge w3-button w3-black w3-section w3-right" input type="reset" value="Reset"> Reset </button>
-            </div>
 
-      
-    </form>
-    
-      </div>
-    </div>
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/1KErvxjnDFxpRqmN2UEjfx2JfyQNpQfGs2s4jT9FOxmMj0kiLcpgveBYPUp7CXCY-maiuz7uCFW78h5EVCLO0bMTUeyGUZZTTIvTUpyAROe460aK6ZCdSKjnh3FeRfyNqyaGXcWRGh0=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Coffee beans">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/xHYamnTyTgzBXEvbxASVh6LuqHXD0nEqyHd8jXwxCT93i6jaBDNHOl5yh6N_jHBL7Urz5QIjczcrnY-ITwzQlQAlz91RXr1bmdFORjmchN1cprsZZQSBSuxN_D6xyYvNcUahDyQ-jNg=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/slTKQ6_beg9Mk2KYdnaswo7u_aX8cKHo_fMEC6__dcxs0df4CERHdTqkQPkg_tJhED8rmFk-w53b_ttNnprkWlZaBBD5KT9qpPj1UfhP4C95Agx_QqAYMi8_3KuDRbdQpr8JWUK9iOg=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Quiet ocean">
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/G8c7MmMMRBz-Wu0uPBVtPP1NRgZzR7wQYV1oqd_DWuTYcN2XCviUbsULlqUVgUejAtfwLpOdDoHL3BYMYLSyrNqAQ1Si2lBeO-UlcCqxKee1uDj6CybohXzdxuE9BXZ9aYrMEVn9fWk=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/hDaiV5WUsmsi6HZcG3P9Y_un3lq6O7cb7pogPh-T6WI1JpQ65uGO9RVd3B1VPvj7YZfSBH_iDV7RSWd_I41QkupSDtjB_LZC8PdsdSlOpr-kH2WTDBi88PwwH9qDOP-HqozYMPpJfHU=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="My beloved typewriter">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/ZA2StbIteU9lue4DZLMiGvNNUG_anJdmghBay4pgI9fDvd_xRBiHOfVJz25chXgY3SBT0ijjBzT11shb0ro-NDdUXHM3WZubrE7zRfCzfvhaYB4ve8Ernc_rQfaSlcir2Ks9ZkuhwMo=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Empty ghost train">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/ZUBDahVHVyaAw7at5U2EU9DduDcGJF6ghaxBHvbWDl19JBif5Zgh5l1eJR0TLqCtDpOm8s6mwI_0uPkV-yZgn8g7Ypqh77-f76tK7dZ9n5ksBMk1btXdeHGTmwCyuMJCK3jKNhB_OoA=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+              </div>
+          </div>
+
+       <div class="w3-row-padding w3-center">
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/Id2MLvJ9gdR-GB2mU_rfckZ5RGz8UKNhCfhMuMjwq_djBi1jsErYbXcdsDcZR1DSU1mOtBEdDP3WdSWk-aCpeL6crvhuRBt0-voH_8oJyAAqmGPXjB8rnox384rdybqHtMOt-T_efCU=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/c1aAccgm21AyUpQpPUuSXm650R1ocxlDIT9O5huKW024jXrTKdayOv8F1TsJSWVhwneSiv29QEi1dgqoZLw2cKzpkiwDIt3It0KEaXDVZRS9ZpSOjXhdooU9TNmvBxu05XZWTZkgYFg=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity " alt="Coffee beans">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/oaco5KymugOze5mm8aBcrwhYg9i-Xlm7epaTzim_pHTOsb2SYHQAmAnXV9A18ok2KnUs3ej-F2YEpAjQ6YMstXSqXXNrTQfyjqQiGwNFpzhTpD7fg3KSPOCcn5GGM5myOdyQcTnHG0I=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+          </div>
+
+          <div class="w3-col m3">
+            <img src="https://lh3.googleusercontent.com/np1-UpeEece5QnQCH4yVQC4FX92-k_Xzair-Z_xIP_9lfrZzWPU2moUHsA44cd-HdthyplbfiUUnq4SDw67oJMOEjAX9ch1UKBiAAalqylJ0Lfo-t23szPsrUISisSGNzF-tweIrnq4=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+          </div>
+        </div>
+
+  <!-- <a href="#" id="load"> <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button></a> -->
   </div>
-  <hr>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
-<!-- End Page Content -->
-</div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+              <img id="img01" class="w3-image">
+              <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+  </div>
+   <hr>
 
-<!-- Image of location/map -->
-<img src="https://lh3.googleusercontent.com/Gy0iO-GekqtjLZ5mA3NNEOcCgMBcFjjpNTiSzMnijUAmGvpld_E8pGUC-FSTe2CG7C2b20c4K_wU319nrGLFOWGwvGm94j7MhVzxfMiyUqIKQWSQfmOU72w1Bp8GoxbmEPb_S1kRS0U=w2400" class="w3-image w3-greyscale-min" style="width:100%">
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-<a href="https://www.facebook.com/moshe.biran.7/?viewas=100000686899395"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-<a href="https://www.instagram.com/moshebiran/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-<a href="https://www.facebook.com/moshe.biran.7/?viewas=100000686899395"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-<a href="https://www.linkedin.com/in/moshe-biran/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-</footer>
+    <!-- The playlist Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="playlist">
+       <h2 class="w3-wide w3-center">playlist</h2>
+       <div class="w3-padding-large w3-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RwFDYobcdF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+     </div>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+    <hr>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    <!-- The like Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="like">
+          <h2 class="w3-wide w3-center">Give us a like</h2>
+          <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-MosheBiran/#" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true">
+  			</div>
+    </div>
+
+    <hr>
+
+    <!-- The qrcoder Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="qrcoder">
+          <h2 class="w3-wide w3-center">QRcode</h2>
+          <div class="w3-padding-large w3-center">
+              <img src="https://lh3.googleusercontent.com/hmK-w2OmyQ49KZYAXPuEERzWIXfixcAneTkkeBFTljZnhLJuf5vTW73Dtj-_hXE8cu82srm4A_G8Z7RazKHhUSHM66INZzJM-yoKQR4CFFxIUhUeYwXZ1N9Y4hHiBmfKhPtQD-ltWfE=s200-p-k" class="w3-center" alt="" style="width:60%">
+          </div>
+    </div>
+
+    <hr>
+
+    <!-- The spa Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="spa">
+           <h2 class="w3-wide w3-center"> Q&A </h2>
+    </div>
+
+    <hr>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>You like what did you see? <br> let us know </i></p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> Lod, israel <br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +972-054-7565967<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: biranmos@post.bgu.ac.il<br>
+            </div>
+            <div class="w3-col m6">
+                <form action="mailto:biranmos@post.bgu.ac.il" method="post" target="_blank" enctype="text/plain">
+                      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                          <div class="w3-half">
+                            <input name="subject" id="subject" input class="w3-round-xxlarge w3-input w3-border" for="subject" type="text" placeholder="Name" required name="Name">
+                          </div>
+                          <div class="w3-half">
+                            <input class="w3-round-xxlarge w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                          </div>
+                      </div>
+                      <input class="w3-round-xxlarge w3-input w3-border" name="body" id="body" type="text" placeholder="Message" required name="Message">
+                      <div class="w3-half">
+                        	<button class="w3-round-xxlarge	w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                      </div>
+                      <div class="w3-half">
+                 			<button class="w3-round-xxlarge w3-button w3-black w3-section w3-right" input type="reset" value="Reset"> Reset </button>
+        			  </div>
+
+
+          		</form>
+        	</div>
+      	</div>
+    </div>
+    <hr>
+
+  <!-- End Page Content -->
+
+  <!-- Image of location/map -->
+  <img src="https://lh3.googleusercontent.com/Gy0iO-GekqtjLZ5mA3NNEOcCgMBcFjjpNTiSzMnijUAmGvpld_E8pGUC-FSTe2CG7C2b20c4K_wU319nrGLFOWGwvGm94j7MhVzxfMiyUqIKQWSQfmOU72w1Bp8GoxbmEPb_S1kRS0U=w2400" class="w3-image w3-greyscale-min" style="width:100%">
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/moshe.biran.7/?viewas=100000686899395"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/moshebiran/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.facebook.com/moshe.biran.7/?viewas=100000686899395"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/moshe-biran/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </footer>
+
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
   }
-}
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-// When the user clicks anywhere outside of the modal, close it
-// var modal = document.getElementById('ticketModal');
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-// $(function() {
-//   $(".item").slice(0, 2).show(); // select the first ten
-//   $("#load").click(function(e) { // click event for load more
-//     e.preventDefault();
-//     $(".item:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
-//     if ($(".item:hidden").length == 0) { // check if any hidden divs still exist
-//       alert("No more divs"); // alert if there are none left
-//     }
-//   });
-// });
-</script>
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  </script>
+  <script type="text/javascript" src="node_modules/emoji-picker-textarea/index.js"></script>
 
 </body>
 </html>
