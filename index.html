@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<TITLE>My legacy</TITLE><meta charset="UTF-8">
 <head>
 
+<TITLE>My legacy</TITLE><meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 </style>
 
-<link rel="stylesheet" type="text/css" href="node_modules/emoji-picker-textarea/css/emoji-picker-textarea.css" />
 
 </head>
 
@@ -199,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
                 <i class="fa fa-envelope" style="width:30px"> </i> Email: biranmos@post.bgu.ac.il<br>
             </div>
             <div class="w3-col m6">
-                <form action="mailto:biranmos@post.bgu.ac.il" method="post" target="_blank" enctype="text/plain">
+                <form method="post" target="_blank" enctype="text/plain">
                       <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                           <div class="w3-half">
                             <input name="subject" id="subject" input class="w3-round-xxlarge w3-input w3-border" for="subject" type="text" placeholder="Name" required name="Name">
@@ -208,13 +207,15 @@ h1, h2, h3, h4, h5, h6 {
                             <input class="w3-round-xxlarge w3-input w3-border" type="text" placeholder="Email" required name="Email">
                           </div>
                       </div>
-                      <input class="w3-round-xxlarge w3-input w3-border" name="body" id="body" type="text" placeholder="Message" required name="Message">
+                      
+                      <textarea class="w3-round-xxlarge w3-input w3-border" name="body" id="body" type="text" placeholder="Message" required name="Message"></textarea>
                       <div class="w3-half">
                         	<button class="w3-round-xxlarge	w3-button w3-black w3-section w3-right" type="submit">SEND</button>
                       </div>
                       <div class="w3-half">
                  			<button class="w3-round-xxlarge w3-button w3-black w3-section w3-right" input type="reset" value="Reset"> Reset </button>
         			  </div>
+                      
 
 
           		</form>
@@ -268,8 +269,17 @@ h1, h2, h3, h4, h5, h6 {
     var captionText = document.getElementById("caption");
     captionText.innerHTML = element.alt;
   }
+  
   </script>
-  <script type="text/javascript" src="node_modules/emoji-picker-textarea/index.js"></script>
-
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+    selector: "#mytextarea",
+    plugins: "emoticons",
+    toolbar: "emoticons",
+    toolbar_location: "bottom",
+    menubar: false
+  });
+</script>
 </body>
 </html>
